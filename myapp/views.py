@@ -58,3 +58,11 @@ def login_page(request):
 
 def signup_page(request):
     return render(request, 'signup.html')
+
+from django.shortcuts import render
+
+def custom_page(request):
+    if request.method == 'POST':
+        # handle form
+        ...
+    return render(request, 'custom.html')

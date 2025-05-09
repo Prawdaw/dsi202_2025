@@ -1,5 +1,3 @@
-{% load static %}
-<link rel="stylesheet" href="{% static 'style.css' %}">
 
 <!DOCTYPE html>
 <html lang="th">
@@ -150,7 +148,7 @@
   <div class="main">
     <div class="header">
       <h2>Community</h2>
-      <img src="profile.jpg" alt="Profile">
+      <img src="images/profile.jpg" alt="Profile">
     </div>
 
     <!-- โพสต์ของผู้ใช้ -->
@@ -168,14 +166,14 @@
 
     <!-- โพสต์ตัวอย่าง -->
     <div class="post">
-        <img src="mia.jpg" class="profile-pic">
+        <img src="images/mia.jpg" class="profile-pic">
         <strong>Mia Collins</strong> · 5 minutes<br>
         <div class="content">
           <p style="background-color: #dff1fc; display:inline-block; padding:6px 12px; border-radius:10px;">
             In the mood for something soft, minimal, and cute today 🌸🕊️👒 #SoftAesthetic #OutfitVibes #SimpleStyle
           </p>
           <br>
-          <img src="post.jpg" alt="fit-check" style="margin-top: 10px; max-width: 100%; border-radius: 8px;" />
+          <img src="images/post.jpg" alt="fit-check" style="margin-top: 10px; max-width: 100%; border-radius: 8px;" />
         </div>
         <div class="reaction">
           <span onclick="toggleLike('like1', this)">💗 <span id="like1">12</span></span>
@@ -191,7 +189,7 @@
       
 
     <div class="post">
-      <img src="liam.jpg" class="profile-pic">
+      <img src="images/liam.jpg" class="profile-pic">
       <strong>Liam Anderson</strong> · 8 minutes<br>
       <div class="content">Clothes don’t make the man, <strong>but they sure help. 🕶️🧥🔥</strong> #MensStyle #DressWell #ConfidenceInStyle</div>
       <div class="reaction">
@@ -207,7 +205,7 @@
 
     <!-- โพสต์ Poll -->
     <div class="post" id="pollPost">
-      <img src="olivia.jpg" class="profile-pic">
+      <img src="images/olivia.jpg" class="profile-pic">
       <strong>Olivia Reed</strong> · 15 minutes<br>
       Which style should I go with today, guys? 🤔👖👕✨ #OutfitCheck #StyleMood #WhatToWear
 
@@ -249,7 +247,7 @@
       <button onclick="editPost(${postCounter})" style="margin-right: 5px;">✏️</button>
       <button onclick="deletePost(${postCounter})">🗑️</button>
     </div>
-    <img src="profile.jpg" class="profile-pic">
+    <img src="images/profile.jpg" class="profile-pic">
     <strong>You</strong> · Just posted<br>
     <div class="content" id="content${postCounter}">${text}${imageTag}</div>
     <div class="reaction">
