@@ -1,6 +1,6 @@
 
 from django.urls import path
-from .views import home_page, OutfitListView, OutfitDetailView, matching_outfit_view, content_page,community_page, custom_page, shop_detail_page, login_page, signup_page
+from .views import home_page, matching_outfit_view, content_page,community_page, custom_page, shop_detail_page, login_page, signup_page
 from django.conf import settings
 from django.conf.urls.static import static
 import os
