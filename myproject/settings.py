@@ -64,7 +64,8 @@ AUTHENTICATION_BACKENDS = (
 )
 SITE_ID = 1
 ACCOUNT_EMAIL_VERIFICATION = 'none'
-LOGIN_REDIRECT_URL = 'home'
+LOGIN_REDIRECT_URL = '/'
+ACCOUNT_LOGOUT_REDIRECT_URL = '/login.html'
 ######
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

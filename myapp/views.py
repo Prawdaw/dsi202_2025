@@ -69,3 +69,8 @@ def custom_page(request):
 
 def index(request):
     return render(request, 'index.html')
+from django.shortcuts import redirect
+
+def google_login_callback(request):
+    # ... process token ...
+    return redirect('/index.html')
