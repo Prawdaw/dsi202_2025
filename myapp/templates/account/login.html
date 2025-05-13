@@ -10,7 +10,6 @@
   <title>Login - Outfitry</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-  <script src="https://accounts.google.com/gsi/client" async defer></script>
 </head>
 <body class="login-body">
   <div class="login-container">
@@ -28,27 +27,18 @@
 
       <button type="submit" class="login-btn">Login</button>
     </form>
-    
-        <!-- Google Login -->
-    <div id="g_id_onload"
-         data-client_id=""
-         data-login_uri="http://localhost:8000/google/callback"
-         data-auto_prompt="false"
-         data-callback="handleCredentialResponse"
-         data-auto_prompt="true">
-    </div>
-
-    <div class="g_id_signin"
-         data-type="standard"
-         data-shape="rectangular"
-         data-theme="outline"
-         data-text="sign_in_with"
-         data-size="large"
-         data-logo_alignment="left">
-    </div>
+        <!-- Google login button -->
+    <a href="{% provider_login_url 'google' %}" class="google-login-btn">
+      <img src="https://developers.google.com/identity/images/g-logo.png" alt="Google icon" class="google-icon" />
+      Login with Google
+    </a>
 
     <p class="signup-text">
-      Don’t have an account? <a href="signup.html">Sign up here</a>
+      Don’t have an account? <a href="{% url 'account_signup' %}">Sign up here</a>
+    </p>
+
+    <p class="signup-text">
+      Don’t have an account? <a href="{% url 'account_signup' %}">Sign up here</a>
     </p>
   </div>
 </body>

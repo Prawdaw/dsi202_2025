@@ -66,3 +66,6 @@ def custom_page(request):
         # handle form
         ...
     return render(request, 'custom.html')
+
+def index(request):
+    return render(request, 'index.html')

@@ -1,14 +1,15 @@
 
 from django.urls import path
-from .views import home_page, matching_outfit_view, content_page,community_page, custom_page, shop_detail_page, login_page, signup_page
+from .views import home_page, matching_outfit_view, content_page,community_page, custom_page, shop_detail_page, login_page, signup_page, index
 from django.conf import settings
 from django.conf.urls.static import static
 import os
 from django.urls import path, include
+from . import views
 
 urlpatterns = [
-    path('', home_page, name='home'),
-    path('index.html', home_page, name='home'),
+#    path('', home_page, name='home'),
+    path('', index, name='home'),
     #path('outfits/', OutfitListView.as_view(), name='outfit-list'),
     #path('outfit/<int:pk>/', OutfitDetailView.as_view(), name='outfit-detail'),
     path('matching.html', matching_outfit_view, name='matching-page'),
@@ -19,5 +20,5 @@ urlpatterns = [
     path('login.html', login_page, name='login-page'),
     path('signup.html', signup_page, name='signup-page'),
     path('accounts/', include('allauth.urls')), # new
-    path('', home_page, name='home'), #new
+    path('', views.index, name='index'), #new
 ] + static(settings.STATIC_URL, document_root=os.path.join(settings.BASE_DIR, 'myapp', 'static'))
