@@ -21,6 +21,4 @@ urlpatterns = [
     path('signup.html', signup_page, name='signup-page'),
     path('accounts/', include('allauth.urls')), # new
     path('', views.index, name='home'), #new
-    path('', views.index, name='home'),  # /
-    path('index/', views.index, name='index')
 ] + static(settings.STATIC_URL, document_root=os.path.join(settings.BASE_DIR, 'myapp', 'static'))
