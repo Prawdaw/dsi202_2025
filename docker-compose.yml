@@ -1,14 +1,12 @@
-version: '3.8'
 services:
-  web:
+  django_project:
     build: .
-    container_name: django_project
     volumes:
       - .:/app
+    working_dir: /app
+    command: python manage.py runserver 0.0.0.0:8000
     ports:
       - "8000:8000"
-    environment:
-      - PYTHONUNBUFFERED=1
 
 volumes:
   db_data:
