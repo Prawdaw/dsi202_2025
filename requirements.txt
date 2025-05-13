@@ -1,3 +1,4 @@
+request
 Django==4.2
 Pillow>=10.0.0
 django-allauth
