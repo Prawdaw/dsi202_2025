@@ -1,4 +1,4 @@
-# DSI202
+
 # Outfitry
 Redefining Fashion Technology: Sustainable, Inclusive, Community-Driven
 Outfitry is an innovative web platform that revolutionizes personal styling by helping users maximize their existing wardrobe. Our technology matches clothes you already own, creates new outfit combinations, and builds confidence through accessible fashion technology.
