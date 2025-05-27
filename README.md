@@ -1,76 +1,93 @@
 # DSI202
-# 1. บทคัดย่อ
-โครงการนี้เป็นแอปพลิเคชันเว็บที่ออกแบบมาเพื่อช่วยผู้ใช้งานในการเลือกชุดเสื้อผ้าที่เหมาะสมกับโอกาสต่างๆ โดยใช้เทคโนโลยี AI ในการจับคู่เสื้อผ้าที่มีอยู่แล้วในตู้เสื้อผ้าของผู้ใช้ โดยผู้ใช้สามารถอัปโหลดรูปภาพเสื้อผ้าชิ้นต่าง ๆ ที่ตนเองมีอยู่ แล้วระบบจะแนะนำชุดที่เข้ากันได้อย่างมีสไตล์ ทั้งนี้ระบบยังรองรับการปรับแต่งชุด รวมถึงแนะนำการประยุกต์ใช้เสื้อผ้าเก่าให้กลายเป็นชุดใหม่ที่มีความคิดสร้างสรรค์ 
+# Outfitry
+Redefining Fashion Technology: Sustainable, Inclusive, Community-Driven
+Outfitry is an innovative web platform that revolutionizes personal styling by helping users maximize their existing wardrobe. Our technology matches clothes you already own, creates new outfit combinations, and builds confidence through accessible fashion technology.
+🌟 Key Features
+Smart Wardrobe Matching: AI-powered system that helps users discover new outfit combinations from clothes they already own
+Confidence Building: Empowering users worldwide to explore fashion confidently through intuitive technology
+Sustainability Focus: Reducing fast fashion waste by emphasizing wardrobe optimization and reuse
+Community-Powered Custom Clothing: Connect with local freelancers and community craftspeople to modify, upcycle, or customize existing garments
+Digital Accessibility: Only requires a smartphone and internet connection, making fashion advice accessible to everyone
+🌍 Our Impact
+Outfitry bridges technology and sustainable fashion while supporting local economies. By connecting users with local tailors and craftspeople, we create a circular fashion ecosystem that distributes income to communities while reducing environmental impact.
+Join us in transforming how people interact with their wardrobes—maximizing what they already own while supporting local craftsmanship and reducing fashion waste.
+Fashion at your fingertips. Community at our core.
 
-แอปนี้ถูกพัฒนาขึ้นเพื่อส่งเสริมให้ผู้คนสามารถแสดงออกถึงตัวตนผ่านการแต่งกาย โดยไม่จำเป็นต้องซื้อเสื้อผ้าใหม่หรือยึดติดกับเทรนด์แฟชั่น
-ระบบนี้ยังช่วยส่งเสริมเศรษฐกิจชุมชนผ่านการแนะนำช่างฝีมือที่สามารถช่วยปรับแต่งเสื้อผ้าตามความต้องการได้ โดยมีทั้งเวอร์ชันฟรีที่ให้บริการพื้นฐาน และเวอร์ชันอัปเกรดที่มีฟีเจอร์ขั้นสูง เช่น การแนะนำเสื้อผ้าตามสภาพอากาศ หรือการวิเคราะห์บุคลิกผู้ใช้เพื่อเลือกชุดที่เหมาะสม
+# User Stories
+👗 1. User who lacks confidence in their personal style
+As a user who is not confident in my fashion choices,
+I want to upload images of my existing clothes and select an occasion such as going to work, on a date, or on a trip,
+so that the AI can recommend a suitable look that helps me dress confidently and look good.
+ 
+🧵 2. User who wants to share AI-recommended outfits with the community
+As a user who wants to engage with others,
+I want to share outfits recommended by the AI with the community,
+so that I can receive feedback, comments, and inspiration from other users to help me improve my personal style.
+ 
+✂️ 3. User who wants to redesign or customize old clothes
+As a user who wants outfits with a unique identity,
+I want to customize or redesign my old clothes through the system’s suggestions,
+so that I can have new, creative, one-of-a-kind outfits that are also environmentally friendly through clothing reuse
+ 
+# Usage Flows Based on User Stories
+🔹 Case: Outfit Recommendations Based on Existing Wardrobe
+The user logs in.
+Goes to the "Wardrobe" page and uploads photos of various clothing items they already own.
+Selects the occasion, such as going to work, on a date, or on a trip.
+The AI analyzes clothing compatibility and the selected context.
+A recommended outfit is displayed, along with a visual mockup.
+The user can save the look or export it as an image.
 
-# 2. User Stories
-👗 1. ผู้ใช้ที่ไม่มั่นใจในสไตล์ของตนเอง
-ในฐานะผู้ใช้ ที่ไม่มั่นใจในการแต่งตัว
- ฉันต้องการ อัปโหลดรูปภาพเสื้อผ้าที่มีอยู่ และเลือกโอกาสที่ต้องการแต่งตัว เช่น ไปทำงาน ไปเดต หรือไปเที่ยว
- เพื่อที่ว่า ระบบ AI จะแนะนำลุคที่เหมาะสม ช่วยให้ฉันแต่งตัวได้อย่างมั่นใจและดูดีมากขึ้น
-🧵 2. ผู้ใช้ที่ต้องการแบ่งปันชุดที่แนะนำกับชุมชน
-ในฐานะผู้ใช้ ที่ต้องการมีปฏิสัมพันธ์กับผู้อื่น
- ฉันต้องการ แชร์ชุดที่ได้รับคำแนะนำจาก AI ไปยังชุมชน
- เพื่อที่ว่า จะได้รับคำแนะนำ คอมเมนต์ และแรงบันดาลใจจากผู้ใช้งานคนอื่น ช่วยให้ฉันพัฒนาสไตล์ของตัวเองต่อไป
-✂️ 3. ผู้ใช้ที่ต้องการออกแบบหรือตกแต่งเสื้อผ้าเก่า
-ในฐานะผู้ใช้ ที่ต้องการชุดที่มีความเป็นเอกลักษณ์
- ฉันต้องการ ปรับแต่งหรือออกแบบเสื้อผ้าเก่าของฉันผ่านระบบคำแนะนำ
- เพื่อที่ว่า จะได้ชุดใหม่ที่มีความคิดสร้างสรรค์ ไม่ซ้ำใคร และยังเป็นมิตรต่อสิ่งแวดล้อมด้วยการรีไซเคิลเสื้อผ้า
+🔹 Case: Sharing Look with the Community for Feedback
+After receiving AI-generated recommendations, the user selects "Share with Community".
+Adds a brief description (e.g., “Is this look suitable for a job interview?”).
+Other users can leave comments or vote on the look.
+The user can edit the outfit or try a new recommendation based on community feedback.
+ 
+🔹 Case: Customizing or Redesigning Old Clothes
+The user uploads photos of unused clothing items.
+Navigates to the "Design/Customize" section.
+The system suggests options like changing collars, adding patterns, or re-matching the item.
+The user can choose a local artisan from the community to execute the customization (if desired).
+The system displays before-and-after mockups to help with decision-making.
 
-# 3. ขั้นตอนการใช้งานตาม User Stories
-🔹 กรณี: แนะนำลุคที่เหมาะสมจากเสื้อผ้าที่มีอยู่
-ผู้ใช้เข้าสู่ระบบ
-ไปที่หน้า “ตู้เสื้อผ้า” และอัปโหลดรูปเสื้อผ้าชิ้นต่าง ๆ ที่มี
-เลือกโอกาส เช่น ไปทำงาน ไปเที่ยว หรือไปเดต
-ระบบ AI วิเคราะห์ความเข้ากันของเสื้อผ้าและบริบท
-แสดงลุคแนะนำ พร้อมภาพตัวอย่างการจัดชุด
-ผู้ใช้สามารถกดบันทึกหรือส่งออกลุคเป็นภาพได้
+#  Installation and Usage
+Installation (Local Development)
+Install Python and Git (if not already installed):
 
-🔹 กรณี: แชร์ลุคให้ชุมชนแสดงความคิดเห็น
-หลังจากได้รับคำแนะนำจาก AI ผู้ใช้เลือก "แชร์ไปยังชุมชน"
-ใส่คำบรรยายสั้น ๆ (เช่น “ลุคนี้เหมาะไปสัมภาษณ์ไหม?”)
-ชุมชนสามารถเข้ามาให้คอมเมนต์หรือโหวต
-ผู้ใช้สามารถแก้ไขลุคหรือทดลองลุคใหม่ตามข้อเสนอแนะ
-
-🔹 กรณี: ปรับแต่งหรือออกแบบเสื้อผ้าเก่า
-ผู้ใช้อัปโหลดรูปเสื้อผ้าที่ไม่ได้ใส่
-ไปที่เมนู "ออกแบบ/ปรับแต่ง"
-ระบบแนะนำแนวทาง เช่น การเปลี่ยนปกเสื้อ เพิ่มลวดลาย หรือจับคู่ใหม่
-ผู้ใช้สามารถเลือกช่างฝีมือจากชุมชน (หากต้องการจ้างผลิต)
-ระบบแสดงตัวอย่างภาพก่อน-หลัง เพื่อช่วยในการตัดสินใจ
-
-# 4. การติดตั้งและใช้งาน
-🔧 การติดตั้ง (Local Development)
-ติดตั้ง Python และ Git (ถ้ายังไม่มี)
- bash
-CopyEdit
+bash
+Copy
+Edit
 sudo apt update
 sudo apt install python3 python3-pip git
+Clone the project:
 
-โคลนโปรเจกต์
- bash
-CopyEdit
+bash
+Copy
+Edit
 git clone https://github.com/your-username/ai-outfit-matcher.git
 cd ai-outfit-matcher
+Install dependencies:
 
-ติดตั้ง Dependencies
- bash
-CopyEdit
+bash
+Copy
+Edit
 pip install -r requirements.txt
+Run database migrations:
 
-รันการตั้งค่าฐานข้อมูล
- bash
-CopyEdit
+bash
+Copy
+Edit
 python manage.py migrate
+Start the development server:
 
-เริ่มรันเซิร์ฟเวอร์
- bash
-CopyEdit
+bash
+Copy
+Edit
 python manage.py runserver
+🌐 How to Use
+Open your browser and go to: http://127.0.0.1:8000
+Register for a new account or log in
+Start using the system according to your needs (upload clothes, request outfit suggestions, share with the community, etc.)
 
-🌐 การเข้าใช้งาน
-เปิดเบราว์เซอร์แล้วเข้าไปที่ http://127.0.0.1:8000
-สมัครสมาชิกหรือเข้าสู่ระบบ
-เริ่มต้นใช้งานตามความต้องการได้ทันที
+Youtube : https://youtu.be/mDxYdgnL034
