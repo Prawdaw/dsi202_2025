@@ -2,6 +2,10 @@
 from django.shortcuts import render
 
 # Create your views here.
+
+from django.shortcuts import render
+
+# Create your views here.
 from django.shortcuts import render
 
 def index(request):
@@ -31,6 +35,33 @@ def custom(request):
 def price(request):
     return render(request, 'myapp/price.html')
 
-def shop_detail_page(request):
-    return render(request, 'myapp/shop-detail.html')  # หรือชื่อไฟล์ template ที่ถูกต้อง
+def shopdetail1(request):
+    return render(request, 'myapp/shop-detail1.html')
+
+def shopdetail2(request):
+    return render(request, 'myapp/shop-detail2.html')
+
+def shopdetail3(request):
+    return render(request, 'myapp/shop-detail3.html')
+
+def shopdetail4(request):
+    return render(request, 'myapp/shop-detail4.html')
+
+def fashionista(request):
+    return render(request, 'myapp/fashionista.html')
+
+def supernova(request):
+    return render(request, 'myapp/supernova.html')
+
+def poweroutfit(request):
+    return render(request, 'content/poweroutfit.html')
+
+def colortone(request):
+    return render(request, 'content/colortone.html')
+
+def gogreener(request):
+    return render(request, 'content/gogreener.html')
+
+def diy(request):
+    return render(request, 'content/diy.html')
 

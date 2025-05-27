@@ -485,7 +485,7 @@
             </div>
             <div class="nav-right">
                 <a href="/login/" data-translate="login">Login</a>
-                <a href="#" class="cta" data-translate="cta">Get Outfitry Free</a>
+                <a href="/signup/" class="cta" data-translate="cta">Get Outfitry Free</a>
                 <select class="lang-select" aria-label="Select language" onchange="changeLanguage(this.value)">
                     <option value="en">English</option>
                     <option value="th">ไทย</option>
@@ -504,22 +504,27 @@
                 <button role="tab" aria-selected="false" data-category="eco" data-translate="environment">Environment</button>
             </div>
             <div class="content-grid">
-                <div class="content-card fashion" tabindex="0">
+                <div class="content-card fashion" tabindex="0" onclick="window.location.href='colortone.html';">
                     <img src="{% static 'images/tone.jpg' %}" alt="Illustration of color tones and emotions" loading="lazy">
                     <p data-translate="color_tones">Color tones and emotions</p>
                 </div>
-                <div class="content-card eco" tabindex="0">
+
+                <div class="content-card eco" tabindex="0" onclick="window.location.href='diy.html';">
                     <img src="{% static 'images/diy.jpg' %}" alt="DIY and upcycling clothes project" loading="lazy">
                     <p data-translate="diy_upcycling">DIY & Upcycling Clothes</p>
                 </div>
-                <div class="content-card eco" tabindex="0">
+
+                <div class="content-card eco" tabindex="0" onclick="window.location.href='gogreener.html';">
                     <img src="{% static 'images/earth.jpg' %}" alt="Guide to being a go-greener fashionista" loading="lazy">
                     <p data-translate="go_greener">How to be a go-greener fashionista</p>
                 </div>
-                <div class="content-card mind" tabindex="0">
+
+                <div class="content-card mind" tabindex="0" onclick="window.location.href='poweroutfit.html';">
                     <img src="{% static 'images/power.jpg' %}" alt="Power outfit to boost confidence" loading="lazy">
                     <p data-translate="power_outfit">Power Outfit to boost your confidence</p>
                 </div>
+            </div>
+
             </div>
         </div>
     </div>
