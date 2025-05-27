@@ -18,8 +18,8 @@ urlpatterns = [
     path('shop-detail4/', views.shopdetail4, name='shopdeatail4'),
     path('fashionista/', views.fashionista, name='fashionista'),
     path('supernova/', views.supernova, name='superrnova'),
-    path('content/colortone/', views.colortone, name='colortone'),
-    path('content/poweroutfit/', views.poweroutfit, name='poweroutfit'),
-    path('content/gogreener/', views.gogreener, name='gogreener'),
-    path('content/diy/', views.diy, name='diy'),
+    path('content/colortone.html', views.colortone, name='colortone'),
+    path('content/poweroutfit.html', views.poweroutfit, name='poweroutfit'),
+    path('content/gogreener.html', views.gogreener, name='gogreener'),
+    path('content/diy.html', views.diy, name='diy'),
 ]
